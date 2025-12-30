@@ -1,0 +1,18 @@
+Features:
+- Can run off a 3s LiPo battery with an XT60 connector (ESCs can provide 5V as well but only one ESC can be connected, and it doesn’t provide much power)
+- Have a decently powerful STM32 or ESP32 processor with enough speed to process all data and run a camera too
+
+- Can obtain position and altitude data with sensors (sensor will probably be a chip with integrated fusion technology to remove the need for things like Kalman filters and reduce main MCU load)
+- Can log and store data for when powered off
+
+
+- Can control and output PWM data signals for 4+ brushless motors
+- Can take PWM input signals from 6+ channels from radio control
+- Can power 4+ 3s power outputs with XT60 connectors for motors
+- Can power a small medium power LED of about 100-200mA with GPIO control
+
+- Have a camera port to connect a standard FPV camera
+- Bluetooth/Wi-Fi capability to transmit log data / FPV camera view
+- Have a 3-4 segment display and 3+ tactile pushbuttons for easy setting tweaking (or equivalent
+- I2C (and other communication protocol) inputs to allow for easy accommodation for sensors added later in development
+- Integrate infrared distance sensors on each direction of the board (I have to research if some 90-degree modules are available to solder directly to the board)
