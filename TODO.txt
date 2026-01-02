@@ -1,0 +1,1 @@
+1. Add sensor soft reset for recovery of communication (BMP580 and others)
