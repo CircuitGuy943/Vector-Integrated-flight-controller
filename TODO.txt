@@ -1,1 +1,3 @@
 1. Add sensor soft reset for recovery of communication (BMP580 and others)
+2. Add pin headers besides connector for camera
+3. Add battery health management system (monitor current across voltage decrease)

@@ -28,6 +28,8 @@ OTHER
 2. SD Card module also placed wherever best, far away from the VTX module and preferably close to the MCU
 3. I2C and SPI output headers for any future addition of sensors/logging/modules
 4. 4 segment display (3 if not enough GPIO) plus a few tactile buttons (again GPIO limited) to allow easy tweaking of PID control values and other settings without the need for reupload of code.
+5. Voltage divider for voltage sensing.
+6. Voltage and current sensing on main power rail
 
 USE 0805 LEDS FOR BASIC COMPONENT
 
