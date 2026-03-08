@@ -8,6 +8,7 @@ HARDWARE
 
 2. Add PCB module for receiver and display output.
 3. MOVE ENTIRE PCB TO THE BOTTOM OF THE DRONE TO PUT GPS ON TOP.
+4. See if LDOs can be used and redo power boosts/bucks to be safe
 
 FINISH
 
