@@ -545,7 +545,7 @@
       "plot": "C:/Users/eduar/Documents/GitHub/Sabre-Integrated-Flight-Controller/PCB Art/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Controller.step",
+      "step": "../../3D Models/Controller.step",
       "svg": "",
       "vrml": ""
     },
