@@ -2,9 +2,13 @@ I am currently trying to build my own drone from scratch, and slowly replace eve
 
 # **Sabre!**
 
-For one of my biggest projects yet I designed a custom flight controller board. It also comes with custom firmware, or if possible compatibility with betaflight or other FC firmware out there. At it's core are two almost pine cone shaped PCBs. Distinctively the "top" and "bottom". The two PCBs connect through the common 2.54mm pitch headers and stack on top of eachother.
+For one of my biggest projects yet I designed a custom flight controller board. It also comes with custom firmware, or if possible compatibility with betaflight or other FC firmware out there. At it's core are two PCBs arranged in a stackup with the "top" and "bottom" sections. The two PCBs connect through the common 2.54mm pitch headers and stack on top of eachother and each serve to provide enough space for all the components and separate the sensitive digital components from the electromagnetic potential of the motor power rails.
 
-Half of the bottom PCB houses the power delivery circuitry. This includes a dedicated TPS259850 chip, or an E-Fuse, a very good protection option for a drone that operates at around 20A sustained and 40A current peaks. Thanks to it's extremely low RDS on, basically no power is wasted, and it trips the circuit in a matter of microseconds when too much current is detected, which makes it extremely useful for a drone full of sensitive circuitry. Followed by that is an INA226 chip.
+### Bottom Board
+
+Half of the bottom PCB houses the power delivery circuitry. This includes a dedicated TPS259850 chip, or an E-Fuse, a very good protection option for a drone that operates at around 20A sustained and 40A current peaks. Thanks to it's extremely low RDS on, basically no power is wasted, and it trips the circuit in a matter of microseconds when too much current is detected, which makes it extremely useful for a drone full of sensitive circuitry, compared to a traditional wire fuse. Followed by that is an INA226 chip, this aims to precisely monitor the current consumption of the entire drone, helping to predict flight times and efficiently manage battery health, through the use of a shunt resistor sized to the expected current draw. The current planes are optimized to make proper use of the different outer and inner layer thicknesses and properly distribute current with minimal heat up.
+
+The other part of the bottom PCB houses the RF circuitry for the FPV system LED drivers togethor with power regulators that power the 12V rail for the LED drivers and the 5V rail for the FPV system and other 5V chips. The 12V power regulator (TPS55289) and the 5V regulator (TPS63070) both use the safest and most reliable layouts possible and are positioned to spatially divide the high ~32A currents on the bottom power distribution circuitry from the rest of the bottom board.
 
 but also integrate sensors and control directly into the PCB and have PWM inputs/outputs for remote control input and ESC output. All with as small a footprint as possible to save space efficiently.
 
