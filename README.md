@@ -3,6 +3,8 @@ I am currently trying to build my own drone from scratch, and slowly replace eve
 # *SABRE!*
 
 <img width="658" height="496" alt="image" src="https://github.com/user-attachments/assets/596ecb43-6d1a-4318-89ff-55ae019cac65" />
+<img width="747" height="423" alt="image" src="https://github.com/user-attachments/assets/23bc5ffb-be6a-408a-aa12-0ab075b191a4" />
+
 
 
 For one of my biggest projects yet I designed a jack of all trades custom flight controller board. It also comes with custom firmware, or if possible compatibility with betaflight or other FC firmware out there. At it's core are two PCBs arranged in a stackup with the "top" and "bottom" sections. The two PCBs connect through the common 2.54mm pitch headers and stack on top of eachother and each serve to provide enough space for all the components and separate the sensitive digital components from the electromagnetic potential of the motor power rails. The bottom board houses E-Fuse protection and an INA226 current monitor to protect the boards, including powered FPV feed with the AT7456E and TX5813, accompanied by four MOSFET powered 12V LED strip channels. The top booard houses a powerful STM32F765VGT CPU which will, *fingers crossed,* be more than enough to run automatic flight levelling software quickly enough to not crash. Followed by a micro SD card slot for storing flight telemetry, programmable DIP switched for easy settings, BNO08x 9-DOF sensor module, segment display and pushbuttons for easy configuration without needing to reupload code and a BMP580 barometic sensor. More than I (or you) will ever need to fly a 4 blade, 1KG piece of PETG plastic :)
